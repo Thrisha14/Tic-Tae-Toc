@@ -1,0 +1,142 @@
+.container {
+    text-align: center;
+    margin-top: -40px;
+    
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+*{
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+
+}
+.turn-container{
+    width: 170px;
+    height: 80px;
+    margin: auto;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    margin: auto;
+   
+}
+.turn-container h3{
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.turn-container .turn-box{
+    border: 3px solid whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 2px;
+}
+.turn-container .turn-box:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF2E63;
+    z-index: -1;
+   
+}
+
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    border: 2px #000;
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+
+    
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: black;
+}
+
+.cell:hover{
+    background-color: #FF2E63
+
+
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+button {
+    margin-top: 50px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FF2E63;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+button:hover{
+padding: 10px 40px;
+background-color: #08d9d6;
+color: #000;
+}
+input[type="radio"] {
+    margin: 0 5px;
+    margin-top: 35px;
+
+}
+
+label {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 25px;
+}
+
+
